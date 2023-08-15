@@ -1,0 +1,644 @@
+
+/* font-family: 'Noto Serif Bengali', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@300;400;700&display=swap');
+
+
+
+/* ========================== Common Css========================= */
+/* ============================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Serif Bengali', serif;
+}
+
+ul,
+ol {
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+button,
+span,
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0;
+    clear: both;
+    color: #000000;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+:where(input, textarea, button) {
+    border: 0;
+    width: 100%;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    box-shadow: none;
+    outline: unset;
+}
+
+
+/* button */
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 50px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 60px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 60px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+.biriani-318425{
+    --btn_bg: #b5104e;
+    --header: #0070a0;
+    --header2: #F60101;
+    --text_color: #5A5A5A;
+    --text_color2 :#008317;
+    --white: #FFF;
+    overflow-x: hidden;
+    font-family: 'Noto Serif Bengali', serif;
+
+}
+
+.biriani-318425_PAD{
+    padding: 0px 15%;
+}
+
+
+.biriani-318425 h1{
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.biriani-318425 a{
+    font-size: 30px;
+    line-height: 45px;
+    background-color: var(--btn_bg);
+    color: var(--white);
+    padding: 10px 25px;
+}
+
+
+.biriani-318425 .section_gap{
+    margin-top: 100px;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------- 
+   Banner
+------------------------------------------------------------------------------------------- */
+
+
+.biriani-318425_bannerBox{
+    text-align: center;
+}
+
+.biriani-318425_bannerBox h1{
+   color: var(--header);
+   font-weight: 600;
+   
+}
+
+.biriani-318425_bannerBox h1{
+   color: var(--header);
+   padding: 20px 0px;
+}
+
+.biriani-318425_bannerBox h1 span{
+   color: var(--header2);
+}
+
+.biriani-318425_bannerBox h4{
+   color: var(--text_color);
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+
+.biriani-318425_bannerBox h5{
+   color: var(--text_color2);
+   font-weight: 600;
+   font-size: 20px;
+   margin-top: 35px;
+   padding: 5px;
+   outline: 2px solid #000;
+   border-radius: 10px;
+   margin-bottom: 20px;
+   
+}
+
+
+
+/* ------------------------------------------------------------------------------------------- 
+  Video
+------------------------------------------------------------------------------------------- */
+
+
+.biriani-318425_Video iframe{
+    width: 100%;
+    height: 640px;
+    border-radius: 20px;
+    margin-top: 40px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-bottom: 20px;
+}
+
+
+/* ------------------------------------------------------------------------------------------- 
+   Why
+------------------------------------------------------------------------------------------- */
+
+
+.biriani-318425_why_Mosola h2{
+        margin-bottom: 25px;
+        font-size: 22px;
+        line-height: 32px;
+        padding: 5px;
+        outline: 1px solid var(--text_color2);
+        text-align: center;
+        color: var(--text_color2);
+        border: 1px solid var(--text_color2);
+        outline-offset: 2px;
+        font-weight: 600;
+        border-radius: 5px;
+       
+}
+
+.biriani-318425_why_Mosola h4{
+       margin-top: 10px;
+        font-size: 22px;
+       color: var(--text_color);
+       font-weight: 600;
+       display: flex;
+}
+
+.biriani-318425_why_Mosola h4 i{
+        font-size: 32px;
+       color: #6ec1e4;
+       padding-right: 10px;
+       vertical-align: middle;
+}
+
+.biriani-318425_why_Mosola2 h2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 26px;
+    line-height: 32px;
+    padding: 5px;
+    outline: 1px solid var(--text_color2);
+    text-align: center;
+    color: var(--text_color2);
+    border: 1px solid var(--text_color2);
+    outline-offset: 2px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.biriani-318425_why_Mosola2 h4{
+    margin-top: 10px;
+    color: var(--text_color2);
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 22px;
+    display: flex;
+}
+
+.biriani-318425_why_Mosola2 h4 i{
+    color: var(--text_color2);
+    font-weight: 400;
+    padding-right: 10px;
+       vertical-align: middle;
+}
+
+
+
+/* button */
+
+.biriani-318425_myButton{
+    margin: 50px 0px;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------- 
+   Mosola
+------------------------------------------------------------------------------------------- */
+
+.biriani-318425_Shahi-mosla2 img {
+    width: 100%;
+    margin-bottom: 15px;
+    max-height: 500px;
+}
+
+
+.biriani-318425_Shahi-mosla h5{
+       font-size: 24px; 
+       color: var(--text_color);
+       line-height: 31px;
+       font-weight: 600;
+       padding: 5px 10px;
+       border: 2px solid #000;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+       margin-bottom: 15px;
+       display: flex;
+ }
+
+.biriani-318425_Shahi-mosla h5 i{
+    color: #77b255;
+    margin-right: 10px;
+
+ }
+
+ .biriani-318425_Shahi-mosla ul li i{
+    color: #6EC1E4;
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+    
+ }
+
+ .biriani-318425_Shahi-mosla ul li h4{
+    display: flex;
+    color: #6EC1E4;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    color: var(--text_color2);
+    margin-bottom: 10px;
+
+ }
+
+
+ 
+/* ------------------------------------------------------------------------------------------- 
+   Mosola
+------------------------------------------------------------------------------------------- */
+
+.biriani-318425_price-discusSec{
+    background-color: #661443;
+    padding: 30px 0px;
+
+}
+
+.biriani-318425_price-discus{
+   
+    text-align: center;
+}
+
+.biriani-318425_price-discus h2{
+    font-size:23px;
+    line-height: 33px;
+    color: var(--white);
+    padding: 10px;
+    outline: 2px solid grey;
+}
+
+.biriani-318425_price-discus h3{
+    font-size:36px;
+    line-height: 46px;
+    color: var(--white);
+    margin-top: 10px;
+}
+
+.biriani-318425_price-discus h4{
+    font-size:36px;
+    line-height: 46px;
+    color: #feff26;
+    margin-top: 10px;
+}
+
+.biriani-318425_price-discus h5{
+    font-size:26px;
+    line-height: 36px;
+    color: #feff26;
+    margin-top: 10px;
+}
+
+.biriani-318425_price-discus h6{
+    font-size:26px;
+    line-height: 36px;
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.biriani-318425_price-discus h6 span{
+    font-size:26px;
+    line-height: 36px;
+    color: #feff26;
+  
+}
+
+/* Swiper */
+
+.biriani-318425 .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .biriani-318425 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+  }
+
+  .biriani-318425 .swiper-slide img{
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+
+  }
+
+
+  .biriani-318425 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .biriani-318425 .swiper {
+    padding: 20px;
+    margin: 20px 0px;
+  }
+
+
+  .biriani-318425 .swiper-button-next:after {
+    content: 'next';
+    font-size: 24px;
+    color: #5A5A5A;
+  }
+
+  .biriani-318425  .swiper-button-prev:after {
+    content: 'prev';
+    font-size: 24px;
+    color: #5A5A5A;
+}
+
+
+.biriani-318425_price-Review h2{
+    font-size: 43px;
+    line-height: 55px;
+    color: #199E09;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+/* order form */
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .orderDiv {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .footer a{
+    width: 100%;
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }
+
+
+/* media quari */
+
+@media (max-width: 991.98px) { 
+
+    .biriani-318425 a {
+        font-size: 20px;
+        line-height: 45px;
+        background-color: var(--btn_bg);
+        color: var(--white);
+        padding: 10px 25px;
+    }
+
+    .biriani-318425_PAD{
+        padding: 0px 0%;
+    }
+
+    .biriani-318425_Video iframe {
+        width: 100%;
+        height: 416px;
+    }
+    
+    .biriani-318425 h1 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .biriani-318425_Shahi-mosla2 img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+    .biriani-318425_price-discus h3 {
+        font-size: 28px;
+    }
+
+    .biriani-318425_price-discus h4 {
+        font-size: 28px;
+    }
+
+    .biriani-318425_price-discus h6 {
+        font-size: 22px;
+    }
+
+    .biriani-318425_price-discus h6 span{
+        font-size: 22px;
+    }
+
+    .biriani-318425_price-Review h2 {
+        font-size: 26px;
+        line-height: 55px;
+        color: #199E09;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .biriani-318425 .swiper-slide {
+        height: 200px;
+    }
+
+    .biriani-318425 .swiper-button-next:after {
+        display: none;
+      }
+    
+      .biriani-318425  .swiper-button-prev:after {
+        display: none;
+    }
+
+}
+
+
+
+@media (max-width: 575.98px) {
+
+    .biriani-318425_Video iframe {
+        width: 100%;
+        height: 260px;
+    }
+    
+    .biriani-318425_why_Mosola h4 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .biriani-318425_why_Mosola2 h2 {
+        font-size: 22px;
+    }
+
+    .biriani-318425_why_Mosola2 h4 {
+        font-size: 18px;
+    }
+
+    .biriani-318425_Shahi-mosla h5 {
+        font-size: 22px;
+    }
+
+
+    .biriani-318425_Shahi-mosla ul li h4 {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+
+ }
